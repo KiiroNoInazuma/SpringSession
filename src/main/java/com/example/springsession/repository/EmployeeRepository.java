@@ -1,10 +1,7 @@
 package com.example.springsession.repository;
 
-import com.example.springsession.model.Employee;
+import com.example.springsession.model.City;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.List;
-
-public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
-    List<Employee> findEmployeeByCityId(int id);
+public interface EmployeeRepository extends JpaRepository<City, Integer> {
 }

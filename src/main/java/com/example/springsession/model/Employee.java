@@ -1,5 +1,6 @@
 package com.example.springsession.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -29,7 +30,8 @@ public class Employee {
     private Integer cityId;
 
     @ManyToOne
-    @JoinColumn(insertable = false, updatable = false)
+    @JsonIgnore
+    @JoinColumn(name = "city_id", insertable = false, updatable = false)
     private City city;
 
 }

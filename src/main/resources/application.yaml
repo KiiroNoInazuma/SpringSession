@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: SpringSession
+  datasource:
+    url: jdbc:postgresql://localhost:5432/wizard
+    username: admin
+    password: ${my_password}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+
